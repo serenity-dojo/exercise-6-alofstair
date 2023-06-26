@@ -1,9 +1,9 @@
 package com.serenitydojo;
 
 public class Cat extends Pet {
-    private String name;
     private String favoriteToy;
-    private int age;
+
+    public static final String CAT_PLAY = "plays with string";
 
     public Cat(String name, String favoriteToy, int age) {
         super(name, age);
@@ -20,6 +20,6 @@ public class Cat extends Pet {
 
     @Override
     public String play() {
-        return "plays with string";
+        return CAT_PLAY;
     }
 }
